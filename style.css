@@ -1,0 +1,72 @@
+.copy_write_footer {
+    position: fixed;
+    color: 03312E;
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    background-color: 009F93;
+    line-height: 3;
+    text-align: center;
+}
+
+body {
+    background-color: 02C3BD;
+}
+
+button {
+    align-items: center;
+    background-color: 037171;
+    border: 2px solid: 03312E;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: 03312E;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+button:hover:after {
+    transform: translate(0, 0);
+}
+
+button:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+button:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    button {
+        padding: 0 40px;
+    }
+}
